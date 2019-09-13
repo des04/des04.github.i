@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+
+<body>
+    
+    <form>
+
+        <!--These labels and inputs allow the user to 
+            write in their home address, postal code,
+            and city.
+            -->
+        <b>
+            <label for="address">Home Address:</label>
+            <input type="text" name="address" placeholder="Enter Your Address"
+                   size="20" maxlength="50" id="address" />
+            <br />
+            <label for="postal code">Postal Code:</label>
+            <input type="text" name="postal code" placeholder="Enter Postal Code"
+                   size="20" maxlength="7" id="postal code" />
+            <br />
+            <label for="city">City:</label>
+            <input type="text" name="city" placeholder="Enter Your City"
+                   size="20" maxlength="50" id="city" />
+            <br />
+        </b>
+
+
+
+        <!--This is a submit button for the info that
+            would've been writtin by the user above
+            -->
+        <input type="submit" value="Submit"/>
+        <br/>
+
+
+
+        <!--This paragraph exists to tell the user to
+            choose a shipping method-->
+        <p>
+            Choose a shipping method:
+        </p>
+        <br/>
+        <!--This is a multi option so the user may choose
+            a shipping method-->
+        <select>
+            <option value="shipping">shipping</option>
+            <option value="Standard Shipping">standard</option>
+            <option value="One-Day Shipping">oneday</option>
+            <option value="Two-Day Shipping">twoday</option>
+        </select>
+        <br/>
+        <p>
+            
+            <i>
+                Select a payment method
+            </i>
+            
+        </p>
+        <!--These next few things are the options for payment methods-->
+        <br/>
+        <label><input type="radio" name="creditcard" value="paypal" checked="checked" />PayPal</label>
+        <br/>
+        <label><input type="radio" name="creditcard" value="debitcard" checked=""/>Debit Card</label>
+        <br/>
+        <label for="comments">Comments</label>
+        <br />
+        <textarea rows="4" cols="40" id="comments" name="comments"></textarea>
+        <br/>
+        <label><input type="checkbox" checked name="email-update">Sign me up for e-mail updates</label>
+        <br />
+        <label><input type="checkbox" checked name="pay-info">Save my payment information</label>
+        <br />
+        <input type="submit" value="Submit"/>
+
+    </form>
+</body>
+</html>
